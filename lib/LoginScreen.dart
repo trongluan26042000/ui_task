@@ -10,7 +10,7 @@ class LoginScreen extends StatelessWidget {
       body: ListView(
         children: [
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,git init
             children: [
               IconButton(onPressed:() {}, icon: const Icon(Icons.arrow_back)),
               Container(
