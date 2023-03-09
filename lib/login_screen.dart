@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -131,7 +130,7 @@ class LoginScreen extends StatelessWidget {
                   const SizedBox(
                     height: 20,
                   ),
-                  Container(
+                  SizedBox(
                     height: 60,
                     width: 300,
                     child: ClipRRect(
@@ -139,7 +138,7 @@ class LoginScreen extends StatelessWidget {
                       child: ElevatedButton(
                         onPressed: () {},
                         style: ElevatedButton.styleFrom(
-                          primary: Colors.yellowAccent
+                          backgroundColor: Colors.yellowAccent
                         ),
                         child: const Text(
                           'Sign In',
@@ -218,7 +217,7 @@ class LoginScreen extends StatelessWidget {
                       children: [
                         ElevatedButton(onPressed: (){},
                           style: ElevatedButton.styleFrom(
-                            primary: Colors.white,
+                            backgroundColor: Colors.white,
                           ),
                           child: Column(
                             children: [
@@ -258,7 +257,7 @@ class LoginScreen extends StatelessWidget {
                       children: [
                         ElevatedButton(onPressed: (){},
                           style: ElevatedButton.styleFrom(
-                            primary: Colors.white,
+                            backgroundColor: Colors.white,
                           ),
                           child: Column(
                             children: [

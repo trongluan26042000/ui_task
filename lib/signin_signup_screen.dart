@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:task_1/login_screen.dart';
 import 'package:task_1/register_screen.dart';
@@ -53,7 +52,7 @@ class SignInUpScreen extends StatelessWidget {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Container(
+                          SizedBox(
                             height: 60,
                             width: 200,
                             child: ClipRRect(
@@ -61,11 +60,11 @@ class SignInUpScreen extends StatelessWidget {
                               child: ElevatedButton(
                                 onPressed: (){
                                   Navigator.push(context,
-                                    MaterialPageRoute(builder: (context) => LoginScreen()),
+                                    MaterialPageRoute(builder: (context) => const LoginScreen()),
                                   );
                                 },
                                 style: ElevatedButton.styleFrom(
-                                  primary: Colors.yellowAccent
+                                  backgroundColor: Colors.yellowAccent
                                 ),
                                 child: const Text(
                                   'Sign In',
@@ -80,7 +79,7 @@ class SignInUpScreen extends StatelessWidget {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Container(
+                          SizedBox(
                             height: 60,
                             width: 200,
                             child: ClipRRect(
@@ -88,11 +87,11 @@ class SignInUpScreen extends StatelessWidget {
                               child: ElevatedButton(
                                 onPressed: (){
                                   Navigator.push(context,
-                                      MaterialPageRoute(builder: (context) => RegisterSCreen()),
+                                      MaterialPageRoute(builder: (context) => const RegisterSCreen()),
                                   );
                                 },
                                 style: ElevatedButton.styleFrom(
-                                  primary: Colors.yellowAccent
+                                  backgroundColor: Colors.yellowAccent
                                 ),
                                 child: const Text(
                                   'Sign Up',
